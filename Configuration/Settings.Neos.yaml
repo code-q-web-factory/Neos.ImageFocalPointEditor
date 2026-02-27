@@ -1,0 +1,10 @@
+Neos:
+  Neos:
+    Ui:
+      resources:
+        javascript:
+          'JvMTECH.Neos.ImageFocalPointEditor':
+            resource: 'resource://JvMTECH.Neos.ImageFocalPointEditor/Public/ImageFocalPointEditor/Plugin.js'
+        stylesheets:
+          'JvMTECH.Neos.ImageFocalPointEditor':
+            resource: 'resource://JvMTECH.Neos.ImageFocalPointEditor/Public/ImageFocalPointEditor/Plugin.css'

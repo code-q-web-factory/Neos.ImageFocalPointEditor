@@ -1,0 +1,48 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  overflow: hidden;
+  padding: 13px;
+}
+
+.editorWrapper {
+  width: var(--crop-area-width, 0);
+  height: var(--crop-area-height, 0);
+  padding: 13px;
+}
+
+.editorWrapper::before {
+  content: '';
+  height: 100%;
+  width: 1000px;
+  background: black;
+  position: absolute;
+  z-index: 1;
+  right: 100%;
+  top: 0;
+}
+
+.editorWrapper::after {
+  content: '';
+  height: 100%;
+  width: 1000px;
+  background: black;
+  position: absolute;
+  z-index: 1;
+  left: 100%;
+  top: 0;
+}
+
+.focalPoint {
+  z-index: 100;
+}
+
+.image {
+  position: absolute;
+  width: var(--thumbnail-width, 0);
+  height: var(--thumbnail-height, 0);
+  left: var(--thumbnail-left, 0);
+  top: var(--thumbnail-top, 0);
+}
