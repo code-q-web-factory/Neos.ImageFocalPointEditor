@@ -110,9 +110,10 @@ class ImageFocalPointEditor extends PureComponent<ImageFocalPointEditorProps, Im
                         src={this.state.image ? this.state.image.previewImageResourceUri : null}
                         classes={classes}
                         onChange={(focalPoint: FocalPoint) => {
-                            focalPoint.x = Math.floor(focalPoint.x);
-                            focalPoint.y = Math.floor(focalPoint.y);
-                            commit(JSON.stringify(focalPoint));
+                            commit(JSON.stringify({
+                                x: Math.floor(focalPoint.x),
+                                y: Math.floor(focalPoint.y),
+                            }));
                         }}
                     />
                 )}

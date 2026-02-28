@@ -1,0 +1,16 @@
+prototype(JvMTECH.Neos.ImageFocalPointEditor:ObjectPosition) < prototype(Neos.Fusion:Component) {
+    cssProperty = 'object-position'
+    focalPoint = Neos.Fusion:DataStructure
+
+    @private {
+        objectPosition = afx`
+            {props.focalPoint ? props.cssProperty + ':' + props.focalPoint.x + '% ' + props.focalPoint.y + '%;' : 'initial'}
+        `
+    }
+    renderer = afx`
+    <Neos.Fusion:Augmenter style={private.objectPosition}>
+        {props.content}
+    </Neos.Fusion:Augmenter>
+    `
+
+}

@@ -1,6 +1,6 @@
 {
     "name": "jvmtech/neos-imagefocalpointeditor",
-    "type": "neos-package",
+    "type": "neos-plugin",
     "require": {
         "neos/neos-ui": "^9.0"
     },
