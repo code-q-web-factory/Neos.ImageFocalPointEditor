@@ -1,6 +1,7 @@
 {
     "name": "jvmtech/neos-imagefocalpointeditor",
     "type": "neos-plugin",
+    "license": "MIT",
     "require": {
         "neos/neos-ui": "^9.0"
     },
